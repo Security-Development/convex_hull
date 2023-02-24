@@ -27,8 +27,8 @@ void init_radis(Node *a1, int i) {
 		return;
 	
 	double d_vector = atan2(a1[i + 1].y - a1[0].y, a1[i + 1].x - a1[0].x);
-	int radis = (d_vector * 180) / M_PI;
-	a1[i + 1].radis = radis;
+	int angle = (d_vector * 180) / M_PI;
+	a1[i + 1].radis = angle;
 
 	init_radis(a1, i + 1);
 		
